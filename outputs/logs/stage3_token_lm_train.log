@@ -1,0 +1,44 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:23<01:34, 23.57s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:42<01:02, 20.78s/it]Loading checkpoint shards:  60%|██████    | 3/5 [01:02<00:40, 20.28s/it]Loading checkpoint shards:  80%|████████  | 4/5 [01:20<00:19, 19.37s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:28<00:00, 15.33s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:28<00:00, 17.64s/it]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+[train] epoch=0 step=0 loss=0.5697
+[train] epoch=0 step=50 loss=0.3966
+[train] epoch=0 step=100 loss=0.2457
+[train] epoch=0 step=150 loss=0.3638
+[train] epoch=0 step=200 loss=0.2291
+[train] epoch=0 step=250 loss=0.3133
+[train] epoch=0 step=300 loss=0.1429
+[train] epoch=0 step=350 loss=0.2284
+[train] epoch=0 step=400 loss=0.3564
+[train] epoch=0 step=450 loss=0.1943
+[train] epoch=0 step=500 loss=0.1488
+[train] epoch=0 step=550 loss=0.2237
+[train] epoch=0 step=600 loss=0.3604
+[train] epoch=0 step=650 loss=0.2379
+[train] epoch=0 step=700 loss=0.0837
+[train] epoch=0 step=750 loss=0.1550
+[train] epoch=0 step=800 loss=0.1334
+[train] epoch=0 step=850 loss=0.2281
+[train] epoch=0 step=900 loss=0.2645
+[train] epoch=0 step=950 loss=0.2398
+[train] epoch=0 step=1000 loss=0.2378
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/lumoOmni/stage3_uti/train/stage3_token_lm.py", line 20, in <module>
+    main()
+  File "/workspace/lumoOmni/stage3_uti/train/stage3_token_lm.py", line 16, in main
+    train(cfg)
+  File "/workspace/lumoOmni/stage3_uti/utils/train_utils.py", line 297, in train
+    save_checkpoint(model, output_dir, global_step, token_space=token_space)
+  File "/workspace/lumoOmni/stage3_uti/utils/train_utils.py", line 151, in save_checkpoint
+    json.dump(token_space, f, indent=2)
+  File "/usr/lib/python3.12/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/usr/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type TokenSpace is not JSON serializable

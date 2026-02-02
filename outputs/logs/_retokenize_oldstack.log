@@ -1,0 +1,8 @@
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+usage: retokenize_check.py [-h] --uti-config UTI_CONFIG --manifest-jsonl
+                           MANIFEST_JSONL --dataset-name DATASET_NAME
+                           [--data-dir DATA_DIR] [--num-samples NUM_SAMPLES]
+                           [--output-report OUTPUT_REPORT]
+                           [--errors-jsonl ERRORS_JSONL]
+retokenize_check.py: error: argument --dataset-name: expected one argument

@@ -1,0 +1,16 @@
+# Core
+numpy
+pillow
+pyyaml
+torch==2.11.0.dev20260129+cu130
+torchvision==0.25.0.dev20260129+cu130
+torchaudio==2.11.0.dev20260129+cu130
+transformers==4.56.2
+diffusers==0.36.0
+einops
+timm==1.0.24
+soundfile==0.13.1
+
+# Audio codecs / resampling (optional but recommended)
+scipy==1.16.1
+encodec==0.1.1

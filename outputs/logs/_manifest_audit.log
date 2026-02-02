@@ -1,0 +1,4 @@
+usage: manifest_audit.py [-h] --manifest-jsonl MANIFEST_JSONL
+                         [--dataset-name DATASET_NAME] [--data-dir DATA_DIR]
+                         [--output-report OUTPUT_REPORT]
+manifest_audit.py: error: argument --dataset-name: expected one argument

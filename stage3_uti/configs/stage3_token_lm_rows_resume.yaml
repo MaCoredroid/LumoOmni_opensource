@@ -1,0 +1,37 @@
+run_name: stage3_token_lm_rows_resume
+seed: 42
+output_dir: outputs/stage3_token_lm_rows_resume
+
+uti:
+  config_path: configs/uti.yaml
+  token_space_json: outputs/stage3_token_lm/token_space.json
+
+model:
+  base_llm: Qwen/Qwen3-8B-Base
+  vocab_size_override: null
+
+train:
+  output_dir: outputs/stage3_token_lm_rows_resume
+  max_seq_len: 2048
+  truncation_side: left
+  batch_size: 1
+  gradient_accum: 2
+  lr: 1.0e-3
+  lr_embed: 1.0e-3
+  lr_head: 1.0e-3
+  weight_decay: 0.0
+  num_epochs: 1
+  save_every: 4
+  log_every: 2
+  grad_clip: 1.0
+  precision: bf16
+  attn_implementation: sdpa
+  freeze_base: true
+  device_map: cuda
+  low_cpu_mem_usage: true
+  save_trainable_only: true
+  resume_from: outputs/stage3_token_lm_rows_smoke/checkpoint_64
+
+data:
+  jsonl_path: outputs/stage3_token_lm/train.smoke_8.jsonl
+  num_workers: 2

@@ -1,0 +1,53 @@
+run_name: stage4_mmpt_trial
+seed: 42
+output_dir: outputs/stage4_mmpt_trial
+
+uti:
+  token_space_json: outputs/stage3_token_lm/token_space.json
+
+model:
+  base_llm: Qwen/Qwen3-8B-Base
+  lora:
+    enable: true
+    r: 8
+    alpha: 16
+    dropout: 0.05
+    bias: none
+    target_modules:
+      - q_proj
+      - k_proj
+      - v_proj
+      - o_proj
+      - gate_proj
+      - up_proj
+      - down_proj
+
+train:
+  output_dir: outputs/stage4_mmpt_trial
+  max_seq_len: 2048
+  truncation_side: left
+  batch_size: 1
+  gradient_accum: 16
+  lr: 1.0e-4
+  lr_embed: 5.0e-4
+  lr_head: 5.0e-4
+  lr_lora: 5.0e-5
+  weight_decay: 0.0
+  weight_decay_lora: 0.0
+  train_steps: 2000
+  save_every: 500
+  log_every: 50
+  grad_clip: 1.0
+  precision: bf16
+  attn_implementation: sdpa
+  freeze_base: true
+  device_map: cuda
+  low_cpu_mem_usage: true
+  save_trainable_only: true
+  resume_from: outputs/stage3_token_lm_iter3/checkpoint_24576
+  log_embed_stats: true
+  enforce_no_truncation: true
+
+data:
+  jsonl_path: outputs/stage4_mmpt/train_8k.jsonl
+  num_workers: 4

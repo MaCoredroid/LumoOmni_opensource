@@ -1,0 +1,93 @@
+model:
+  llm_name: Qwen/Qwen3-8B-Base
+  vision_name: google/siglip2-so400m-patch14-384
+  vision_ln: false
+  connector_checkpoint: "outputs/stage1_align_p11/checkpoint_16000.pt"
+  resampler:
+    num_latents: 64
+    depth: 2
+    num_heads: 8
+    head_dim: 64
+  projector:
+    mlp_ratio: 4
+  lora:
+    enable: true
+    r: 16
+    alpha: 32
+    dropout: 0.05
+    bias: none
+    target_modules:
+      - q_proj
+      - k_proj
+      - v_proj
+      - o_proj
+      - gate_proj
+      - up_proj
+      - down_proj
+
+tokens:
+  image_token: "<image>"
+  image_patch_token: "<image_patch>"
+  im_start_token: "<im_start>"
+  im_end_token: "<im_end>"
+
+data:
+  type: llava_instruct
+  json_path: "data/llava_instruct/llava_instruct_150k.json"
+  image_root: "data/coco/train2017"
+  split_mode: stratified_len
+  eval_size: 2000
+  len_buckets: [0, 64, 128, 999999]
+  max_samples: 20000
+  golden_set_path: "data/golden/stage2_llava_instruct_golden64.jsonl"
+  golden_seed: 123
+  golden_size: 64
+
+train:
+  output_dir: "outputs/stage2_sft_single_trial"
+  max_seq_len: 2048
+  batch_size: 4
+  gradient_accum: 16
+  num_epochs: 1
+  train_steps: 2000
+  log_every: 20
+  save_every: 500
+  eval_every: 0
+  full_eval_every: "epoch"
+  quick_eval_size: 200
+  quick_eval_steps: 200
+  estimate_after: 20
+  estimate_every: 20
+  num_workers: 8
+  prefetch_factor: 4
+  pin_memory: true
+  persistent_workers: true
+  pad_to_multiple_of: 8
+  tqdm_disable: true
+  progress_percent: 0.1
+  attn_implementation: "flash_attention_2"
+  allow_tf32: true
+  cudnn_benchmark: true
+  matmul_precision: "high"
+  seed: 42
+  precision: "bf16"
+  grad_clip: 1.0
+  lr: 1.0e-4
+  lr_connector: 1.0e-4
+  lr_lora: 5.0e-5
+  weight_decay: 0.0
+  weight_decay_connector: 0.01
+  weight_decay_lora: 0.0
+  warmup_ratio: 0.03
+  lr_scheduler: cosine
+  gradient_checkpointing: true
+  use_cache: false
+  train_projector: true
+  train_resampler: true
+  train_vision_ln: false
+  train_lora: true
+  run_golden_every: "end"
+  golden_batch_size: 8
+  golden_do_sample: false
+  golden_max_new_tokens: 128
+  golden_repetition_penalty: 1.0

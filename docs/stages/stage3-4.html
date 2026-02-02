@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stage 3.4 — Feedback & Decode Gates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <div class="site">
+    <nav class="nav">
+      <div class="brand">
+        <div class="brand-mark"></div>
+        <div>
+          <div>LumoOmni</div>
+          <div style="font-size:11px; letter-spacing:0.18em; color:var(--ink-2)">Stage 3.4</div>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="overview.html">Overview</a>
+        <a href="stage3-3.html">Stage 3.3</a>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="kicker">Stage 3.4</div>
+      <h1 class="section-title">Feedback loop and decode quality gates</h1>
+      <p>Validate generation compliance and fix decode failures before promoting to Stage 4.</p>
+
+      <div class="card-grid" style="margin-top:24px;">
+        <div class="card">
+          <h3>Goals</h3>
+          <p>Ensure token-type compliance and stable decoding for T2A and T2I.</p>
+        </div>
+        <div class="card">
+          <h3>Deliverables</h3>
+          <p>Golden set summaries, decode audits, and structured feedback.</p>
+        </div>
+        <div class="card">
+          <h3>Verification</h3>
+          <p>Token-range checks, decode success rate, and prompt ablations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">Primary Sources</div>
+      <div class="stage-list">
+        <div class="stage-item">
+          <strong>Stage 3.4 Spec</strong>
+          <p>Training logs, golden set generation, and gate criteria.</p>
+          <span class="badge">stage3.4spec.md</span>
+        </div>
+        <div class="stage-item">
+          <strong>Stage 3.4 Feedback</strong>
+          <p>Decode compliance analysis and recommended fixes.</p>
+          <span class="badge">stage3.4feedback.md</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="kicker">Status</div>
+      <p>Stage 3.4 closes the loop on decode safety before moving to full any-to-any generation.</p>
+    </footer>
+  </div>
+  <script src="../assets/site.js"></script>
+</body>
+</html>

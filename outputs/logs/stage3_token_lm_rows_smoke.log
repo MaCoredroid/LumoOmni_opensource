@@ -1,0 +1,17 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:20<01:23, 20.84s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:37<00:54, 18.31s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:53<00:34, 17.19s/it]Loading checkpoint shards:  80%|████████  | 4/5 [01:07<00:15, 15.89s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:13<00:00, 12.49s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:13<00:00, 14.72s/it]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+[train] epoch=0 step=0 loss=2.1038
+[train] epoch=0 step=5 loss=2.3374
+[train] epoch=0 step=10 loss=1.7853
+[train] epoch=0 step=15 loss=1.8645
+[train] epoch=0 step=20 loss=0.9295
+[train] epoch=0 step=25 loss=1.6538
+[train] epoch=0 step=30 loss=2.0289
+[train] epoch=0 step=35 loss=1.5364
+[train] epoch=0 step=40 loss=1.2440
+[train] epoch=0 step=45 loss=1.2210
+[train] epoch=0 step=50 loss=1.1145
+[train] epoch=0 step=55 loss=0.9996
+[train] epoch=0 step=60 loss=0.9195

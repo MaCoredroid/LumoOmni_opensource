@@ -1,0 +1,4 @@
+{"id":"sample_t2i","task":"t2i","text":"a test image","image_path":"/workspace/lumoOmni/stage3_uti/tests/assets/image0.png"}
+{"id":"sample_t2a","task":"t2a","text":"a test audio","audio_path":"/workspace/lumoOmni/stage3_uti/tests/assets/audio0.wav"}
+{"id":"sample_i2t","task":"i2t","text":"describe the image","image_path":"/workspace/lumoOmni/stage3_uti/tests/assets/image0.png"}
+{"id":"sample_a2t","task":"a2t","text":"describe the audio","audio_path":"/workspace/lumoOmni/stage3_uti/tests/assets/audio0.wav"}

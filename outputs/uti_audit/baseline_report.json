@@ -1,0 +1,54 @@
+{
+  "config": "stage3_uti/configs/uti.yaml",
+  "decode_mode": "deterministic",
+  "assets": "stage3_uti/tests/assets",
+  "runtime_sizes": {
+    "image_codebook_size": 8192,
+    "audio_codebook_size": 1024,
+    "audio_n_codebooks": 4
+  },
+  "runtime_size_match": {
+    "image_codebook": true,
+    "audio_codebook": true
+  },
+  "text_deterministic": true,
+  "image_deterministic": true,
+  "image_token_count": 32,
+  "image_shape_ok": true,
+  "audio_deterministic": true,
+  "audio_token_count": 6600,
+  "text_token_range_ok": true,
+  "image_token_range_ok": true,
+  "audio_token_range_ok": true,
+  "audio_codebook_order_ok": true,
+  "audio_code_idx_ok": true,
+  "metrics_v2": {
+    "audio_snr_db": -2.916541576385498,
+    "audio_mae": 0.15422098338603973,
+    "audio_log_mel_l1": 4.990955352783203,
+    "image_psnr": 7.38339900970459,
+    "image_ssim": 0.03245673491028554
+  },
+  "audio_sample_rate_ok": true,
+  "audio_channels_ok": true,
+  "audio_length_expected": 480000,
+  "audio_length_actual": 480000,
+  "audio_length_tol": 480,
+  "audio_length_ok": true,
+  "image_size_expected": [
+    224,
+    224
+  ],
+  "image_size_actual": [
+    224,
+    224
+  ],
+  "image_size_ok": true,
+  "audio_shape_ok": true,
+  "audio_idempotent": false,
+  "image_idempotent": false,
+  "audio_roundtrip_snr_db": 24.008159637451172,
+  "audio_roundtrip_mae": 0.0006779923569411039,
+  "image_decode_ok": true,
+  "audio_decode_ok": true
+}

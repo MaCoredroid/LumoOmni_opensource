@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stage 1 — Alignment Pretraining</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <div class="site">
+    <nav class="nav">
+      <div class="brand">
+        <div class="brand-mark"></div>
+        <div>
+          <div>LumoOmni</div>
+          <div style="font-size:11px; letter-spacing:0.18em; color:var(--ink-2)">Stage 1</div>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="overview.html">Overview</a>
+        <a href="stage1-1.html">Stage 1.1</a>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="kicker">Stage 1</div>
+      <h1 class="section-title">Alignment pretraining (captioning-style)</h1>
+      <p>Build the VLM baseline by training only the connector while keeping the LLM and vision tower frozen.</p>
+
+      <div class="card-grid" style="margin-top:24px;">
+        <div class="card">
+          <h3>Goals</h3>
+          <p>Teach the LLM to condition on injected visual tokens without degrading text behavior.</p>
+        </div>
+        <div class="card">
+          <h3>Deliverables</h3>
+          <p>Connector training loop, data schema, prompt template, and deterministic evaluation.</p>
+        </div>
+        <div class="card">
+          <h3>Verification</h3>
+          <p>Teacher-forced ablations, truncation checks, and label coverage metrics.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">Primary Sources</div>
+      <div class="stage-list">
+        <div class="stage-item">
+          <strong>Stage 1 Spec</strong>
+          <p>Full implementation-ready specification for alignment pretraining.</p>
+          <span class="badge">stage1design.md</span>
+        </div>
+        <div class="stage-item">
+          <strong>Level 1 Plan</strong>
+          <p>Broader model and data plan for the vision-language baseline.</p>
+          <span class="badge">stage1.md</span>
+        </div>
+        <div class="stage-item">
+          <strong>Connector Report</strong>
+          <p>Architecture summary and parameter counts.</p>
+          <span class="badge">reports/stage1_connector_report.md</span>
+        </div>
+        <div class="stage-item">
+          <strong>P0 Runbook</strong>
+          <p>Ablation results and truncation statistics.</p>
+          <span class="badge">reports/stage1_p0_runbook.md</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="kicker">Status</div>
+      <p>Stage 1 establishes the connector and data pipeline needed for later discrete-token stages.</p>
+    </footer>
+  </div>
+  <script src="../assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.git
+.cache
+logs
+qwen3-vlm/.cache
+qwen3-vlm/data
+qwen3-vlm/outputs
+qwen3-vlm/**/__pycache__
+qwen3-vlm/**/*.pyc

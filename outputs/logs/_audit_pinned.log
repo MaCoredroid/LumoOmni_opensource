@@ -1,0 +1,8 @@
+usage: audit_tokenized.py [-h] --uti-config UTI_CONFIG --dataset-name
+                          DATASET_NAME [--data-dir DATA_DIR]
+                          [--range-samples RANGE_SAMPLES]
+                          [--decode-samples DECODE_SAMPLES]
+                          [--compare-hashes COMPARE_HASHES]
+                          [--hashes-jsonl HASHES_JSONL]
+                          [--output-report OUTPUT_REPORT]
+audit_tokenized.py: error: argument --dataset-name: expected one argument

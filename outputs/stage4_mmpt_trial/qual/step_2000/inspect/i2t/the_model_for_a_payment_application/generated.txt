@@ -1,0 +1,1 @@
+a chart showing the stages of software development, including requirements, design, implementation, testing and maintenance

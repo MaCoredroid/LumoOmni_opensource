@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+build/
+dist/
+pip-wheel-metadata/
+
+# Virtualenvs
+.venv/
+venv/
+ENV/
+
+# Caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.git.bak/
+.env
+
+# Training artifacts / large files
+refs/
+qwen3-vlm/data/
+qwen3-vlm/checkpoints/
+qwen3-vlm/outputs/
+qwen3-vlm/runs/
+qwen3-vlm/wandb/
+outputs/
+outputs/stage3_token_lm/train.jsonl
+outputs/stage3_token_lm/eval.jsonl
+logs/
+*.log
+
+# Stage-3 resources (local pulls)
+models/
+data/
+tokenizers/
+.hf_cache/
+
+# Model/data binaries
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+*.tflite
+*.npz
+*.npy
+*.parquet
+*.arrow
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.rar

@@ -1,0 +1,12 @@
+base_text_model: Qwen/Qwen3-8B-Base
+text_vocab_size: 151669
+vocab_size_total: 164021
+ranges:
+  AUDIO_CB0: start=159925 end=160948 size=1024
+  AUDIO_CB1: start=160949 end=161972 size=1024
+  AUDIO_CB2: start=161973 end=162996 size=1024
+  AUDIO_CB3: start=162997 end=164020 size=1024
+  IMAGE: start=151733 end=159924 size=8192
+  SPECIAL: start=151669 end=151732 size=64
+  TEXT: start=0 end=151668 size=151669
+special_tokens: 10

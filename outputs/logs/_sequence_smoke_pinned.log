@@ -1,0 +1,6 @@
+usage: sequence_smoke.py [-h] --uti-config UTI_CONFIG --dataset-name
+                         DATASET_NAME [--data-dir DATA_DIR]
+                         [--num-samples NUM_SAMPLES]
+                         [--max-seq-len MAX_SEQ_LEN]
+                         [--output-report OUTPUT_REPORT]
+sequence_smoke.py: error: argument --dataset-name: expected one argument

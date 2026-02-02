@@ -1,0 +1,15 @@
+torch==2.11.0.dev20260129+cu130
+torchvision==0.25.0.dev20260129+cu130
+torchaudio==2.11.0.dev20260129+cu130
+transformers==4.56.2
+datasets==2.18.0
+accelerate
+pyyaml
+pillow
+einops
+safetensors
+tqdm
+sentencepiece
+tiktoken
+peft
+gradio

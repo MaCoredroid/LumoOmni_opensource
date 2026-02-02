@@ -1,0 +1,4 @@
+usage: split_audit.py [-h] --dataset-name DATASET_NAME [--data-dir DATA_DIR]
+                      [--eval-mod EVAL_MOD] [--eval-cutoff EVAL_CUTOFF]
+                      [--output-report OUTPUT_REPORT]
+split_audit.py: error: argument --dataset-name: expected one argument

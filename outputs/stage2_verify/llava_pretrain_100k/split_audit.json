@@ -1,0 +1,19 @@
+{
+  "dataset": "llava_pretrain_100k",
+  "train_count": 98958,
+  "eval_count": 1042,
+  "duplicate_train": 0,
+  "duplicate_eval": 0,
+  "overlap_count": 0,
+  "overlap_sample": [],
+  "eval_mod": 1000,
+  "eval_cutoff": 10,
+  "split_mismatch_counts": {
+    "train": 0,
+    "eval": 0
+  },
+  "split_mismatch_examples": {
+    "train": [],
+    "eval": []
+  }
+}

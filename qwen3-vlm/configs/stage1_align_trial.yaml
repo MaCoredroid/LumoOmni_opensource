@@ -1,0 +1,56 @@
+model:
+  llm_name: Qwen/Qwen3-8B-Base
+  vision_name: google/siglip2-so400m-patch14-384
+  vision_ln: true
+  resampler:
+    num_latents: 64
+    depth: 2
+    num_heads: 8
+    head_dim: 64
+  projector:
+    mlp_ratio: 4
+
+tokens:
+  image_token: "<image>"
+  image_patch_token: "<image_patch>"
+  im_start_token: "<im_start>"
+  im_end_token: "<im_end>"
+
+data:
+  type: llava_pretrain
+  json_path: "data/llava_pretrain/blip_laion_cc_sbu_558k.json"
+  image_root: "data/llava_pretrain"
+  image_size: 384
+  prompt: "Describe the image."
+  eval_ratio: 0.02
+  max_samples: 5000
+
+train:
+  output_dir: "outputs/stage1_align_trial"
+  max_seq_len: 512
+  batch_size: 4
+  gradient_accum: 4
+  lr: 1.0e-4
+  weight_decay: 0.0
+  num_epochs: 3
+  log_every: 50
+  save_every: 200
+  eval_every: 200
+  estimate_after: 50
+  estimate_every: 50
+  num_workers: 8
+  prefetch_factor: 4
+  pin_memory: true
+  persistent_workers: true
+  tqdm_percent: 0.1
+  tqdm_disable: true
+  progress_percent: 0.1
+  attn_implementation: "flash_attention_2"
+  allow_tf32: true
+  cudnn_benchmark: true
+  matmul_precision: "high"
+  seed: 42
+  precision: "bf16"
+  train_projector: true
+  train_resampler: true
+  train_vision_ln: false

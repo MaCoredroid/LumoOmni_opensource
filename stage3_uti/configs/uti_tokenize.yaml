@@ -1,0 +1,38 @@
+base_text_model: Qwen/Qwen3-8B-Base
+image_tokenizer:
+  name_or_path: AILab-CVC/seed-tokenizer-2
+  local_path: /media/mark/SHARED/lumoOmni/tokenizers/image/seed-tokenizer-2/seed_quantizer.pt
+  seed2_path: /media/mark/SHARED/lumoOmni/refs/stage3/AnyGPT
+  image_size: 224
+  load_diffusion: false
+  diffusion_model_path: /media/mark/SHARED/lumoOmni/models/MIO-7B-Base/stable-diffusion-2-1-unclip
+  device: cuda
+  fp16: true
+  codebook_size: 8192
+  resolution: 256
+  resize: bicubic
+  crop: center
+audio_codec:
+  name_or_path: facebook/encodec_48khz
+  local_path: /media/mark/SHARED/lumoOmni/tokenizers/audio/encodec_48khz
+  device: cuda
+  n_codebooks: 4
+  codebook_size: 1024
+  target_bandwidth: 6.0
+  target_sample_rate: 48000
+  channels: 2
+  clip_seconds: 10.0
+  serialization: flatten_by_time_interleaved_codebooks
+token_space:
+  n_special: 64
+  special_tokens:
+  - <|text_start|>
+  - <|text_end|>
+  - <|img_start|>
+  - <|img_end|>
+  - <|aud_start|>
+  - <|aud_end|>
+  - <|gen_text|>
+  - <|gen_img|>
+  - <|gen_aud|>
+  - <|pad_mm|>

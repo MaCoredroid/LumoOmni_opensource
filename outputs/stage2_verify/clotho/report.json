@@ -1,0 +1,11 @@
+{
+  "dataset": "clotho",
+  "forward_error": null,
+  "forward_ok": true,
+  "retokenize_mismatch_count": 0,
+  "sequence_builder_ok": true,
+  "split_mismatch_count": 0,
+  "split_overlap_count": 0,
+  "token_space_file_ok": true,
+  "token_space_hash_ok": true
+}

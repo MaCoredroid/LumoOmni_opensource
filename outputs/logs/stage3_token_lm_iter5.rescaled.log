@@ -1,0 +1,158 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:21<01:25, 21.42s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:41<01:01, 20.45s/it]
+Loading checkpoint shards:  60%|██████    | 3/5 [00:59<00:39, 19.63s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [01:16<00:18, 18.44s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [01:24<00:00, 14.55s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [01:24<00:00, 16.82s/it]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+[train] epoch=0 step=0 loss=0.1905 a2t_avg=0.1905 emb_norm_mean=1.3984 emb_norm_std=0.8828 head_norm_mean=0.3809 head_norm_std=0.0160 loss_raw=3.0480 a2t_raw=3.0480
+[train] epoch=0 step=50 loss=0.1306 a2t_avg=0.1459 i2t_avg=0.1506 emb_norm_mean=1.3984 emb_norm_std=0.8867 head_norm_mean=0.3809 head_norm_std=0.0160 loss_raw=2.0896 a2t_raw=2.3344 i2t_raw=2.4096
+[train] epoch=0 step=100 loss=0.1627 a2t_avg=0.1474 i2t_avg=0.1542 emb_norm_mean=1.3984 emb_norm_std=0.8867 head_norm_mean=0.3809 head_norm_std=0.0161 loss_raw=2.6032 a2t_raw=2.3584 i2t_raw=2.4672
+[train] epoch=0 step=150 loss=0.1079 a2t_avg=0.1447 i2t_avg=0.1529 emb_norm_mean=1.4062 emb_norm_std=0.8867 head_norm_mean=0.3809 head_norm_std=0.0161 loss_raw=1.7264 a2t_raw=2.3152 i2t_raw=2.4464
+[train] epoch=0 step=200 loss=0.1281 a2t_avg=0.1473 i2t_avg=0.1527 emb_norm_mean=1.4062 emb_norm_std=0.8867 head_norm_mean=0.3809 head_norm_std=0.0161 loss_raw=2.0496 a2t_raw=2.3568 i2t_raw=2.4432
+[train] epoch=0 step=250 loss=0.1735 a2t_avg=0.1456 i2t_avg=0.1530 emb_norm_mean=1.4062 emb_norm_std=0.8906 head_norm_mean=0.3809 head_norm_std=0.0162 loss_raw=2.7760 a2t_raw=2.3296 i2t_raw=2.4480
+[train] epoch=0 step=300 loss=0.2079 a2t_avg=0.1457 i2t_avg=0.1541 emb_norm_mean=1.4062 emb_norm_std=0.8906 head_norm_mean=0.3809 head_norm_std=0.0162 loss_raw=3.3264 a2t_raw=2.3312 i2t_raw=2.4656
+[train] epoch=0 step=350 loss=0.0815 a2t_avg=0.1446 i2t_avg=0.1507 emb_norm_mean=1.4062 emb_norm_std=0.8906 head_norm_mean=0.3809 head_norm_std=0.0164 loss_raw=1.3040 a2t_raw=2.3136 i2t_raw=2.4112
+[train] epoch=0 step=400 loss=0.1065 a2t_avg=0.1455 i2t_avg=0.1535 emb_norm_mean=1.4062 emb_norm_std=0.8906 head_norm_mean=0.3809 head_norm_std=0.0165 loss_raw=1.7040 a2t_raw=2.3280 i2t_raw=2.4560
+[train] epoch=0 step=450 loss=0.2126 a2t_avg=0.1460 i2t_avg=0.1555 emb_norm_mean=1.4141 emb_norm_std=0.8945 head_norm_mean=0.3809 head_norm_std=0.0166 loss_raw=3.4016 a2t_raw=2.3360 i2t_raw=2.4880
+[train] epoch=0 step=500 loss=0.2005 a2t_avg=0.1467 i2t_avg=0.1555 emb_norm_mean=1.4141 emb_norm_std=0.8945 head_norm_mean=0.3809 head_norm_std=0.0167 loss_raw=3.2080 a2t_raw=2.3472 i2t_raw=2.4880
+[train] epoch=0 step=550 loss=0.1016 a2t_avg=0.1473 i2t_avg=0.1560 emb_norm_mean=1.4141 emb_norm_std=0.8945 head_norm_mean=0.3809 head_norm_std=0.0168 loss_raw=1.6256 a2t_raw=2.3568 i2t_raw=2.4960
+[train] epoch=0 step=600 loss=0.1935 a2t_avg=0.1478 i2t_avg=0.1551 emb_norm_mean=1.4141 emb_norm_std=0.8945 head_norm_mean=0.3809 head_norm_std=0.0168 loss_raw=3.0960 a2t_raw=2.3648 i2t_raw=2.4816
+[train] epoch=0 step=650 loss=0.0972 a2t_avg=0.1481 i2t_avg=0.1558 emb_norm_mean=1.4141 emb_norm_std=0.8984 head_norm_mean=0.3809 head_norm_std=0.0170 loss_raw=1.5552 a2t_raw=2.3696 i2t_raw=2.4928
+[train] epoch=0 step=700 loss=0.1702 a2t_avg=0.1473 i2t_avg=0.1554 emb_norm_mean=1.4141 emb_norm_std=0.8984 head_norm_mean=0.3809 head_norm_std=0.0170 loss_raw=2.7232 a2t_raw=2.3568 i2t_raw=2.4864
+[train] epoch=0 step=750 loss=0.0794 a2t_avg=0.1479 i2t_avg=0.1545 emb_norm_mean=1.4219 emb_norm_std=0.8984 head_norm_mean=0.3809 head_norm_std=0.0170 loss_raw=1.2704 a2t_raw=2.3664 i2t_raw=2.4720
+[train] epoch=0 step=800 loss=0.2098 a2t_avg=0.1481 i2t_avg=0.1551 emb_norm_mean=1.4219 emb_norm_std=0.8984 head_norm_mean=0.3809 head_norm_std=0.0171 loss_raw=3.3568 a2t_raw=2.3696 i2t_raw=2.4816
+[train] epoch=0 step=850 loss=0.1263 a2t_avg=0.1483 i2t_avg=0.1560 emb_norm_mean=1.4219 emb_norm_std=0.9023 head_norm_mean=0.3809 head_norm_std=0.0171 loss_raw=2.0208 a2t_raw=2.3728 i2t_raw=2.4960
+[train] epoch=0 step=900 loss=0.1202 a2t_avg=0.1481 i2t_avg=0.1559 emb_norm_mean=1.4219 emb_norm_std=0.9023 head_norm_mean=0.3809 head_norm_std=0.0171 loss_raw=1.9232 a2t_raw=2.3696 i2t_raw=2.4944
+[train] epoch=0 step=950 loss=0.2174 a2t_avg=0.1476 i2t_avg=0.1563 emb_norm_mean=1.4219 emb_norm_std=0.9023 head_norm_mean=0.3809 head_norm_std=0.0171 loss_raw=3.4784 a2t_raw=2.3616 i2t_raw=2.5008
+[train] epoch=0 step=1000 loss=0.1112 a2t_avg=0.1469 i2t_avg=0.1557 emb_norm_mean=1.4297 emb_norm_std=0.9023 head_norm_mean=0.3809 head_norm_std=0.0171 loss_raw=1.7792 a2t_raw=2.3504 i2t_raw=2.4912
+[ablation] step=1000 audio={'loss_correct_mean': 2.373648605309427, 'loss_shuffle_mean': 2.3578451573848724, 'loss_noise_mean': 2.5652748998254538, 'win_rate_shuffle': 0.53125, 'win_rate_noise': 0.78125, 'n_examples': 64.0} image={'loss_correct_mean': 3.4457630421966314, 'loss_shuffle_mean': 3.416169572621584, 'loss_noise_mean': 4.006254307925701, 'win_rate_shuffle': 0.390625, 'win_rate_noise': 0.90625, 'n_examples': 64.0}
+[train] epoch=0 step=1050 loss=0.1240 a2t_avg=0.1467 i2t_avg=0.1552 emb_norm_mean=1.4297 emb_norm_std=0.9062 head_norm_mean=0.3809 head_norm_std=0.0171 loss_raw=1.9840 a2t_raw=2.3472 i2t_raw=2.4832
+[train] epoch=0 step=1100 loss=0.1566 a2t_avg=0.1463 i2t_avg=0.1552 emb_norm_mean=1.4297 emb_norm_std=0.9062 head_norm_mean=0.3809 head_norm_std=0.0171 loss_raw=2.5056 a2t_raw=2.3408 i2t_raw=2.4832
+[train] epoch=0 step=1150 loss=0.1878 a2t_avg=0.1462 i2t_avg=0.1549 emb_norm_mean=1.4297 emb_norm_std=0.9062 head_norm_mean=0.3809 head_norm_std=0.0171 loss_raw=3.0048 a2t_raw=2.3392 i2t_raw=2.4784
+[train] epoch=0 step=1200 loss=0.1014 a2t_avg=0.1456 i2t_avg=0.1546 emb_norm_mean=1.4297 emb_norm_std=0.9102 head_norm_mean=0.3809 head_norm_std=0.0172 loss_raw=1.6224 a2t_raw=2.3296 i2t_raw=2.4736
+[train] epoch=0 step=1250 loss=0.3552 a2t_avg=0.1456 i2t_avg=0.1550 emb_norm_mean=1.4375 emb_norm_std=0.9102 head_norm_mean=0.3809 head_norm_std=0.0171 loss_raw=5.6832 a2t_raw=2.3296 i2t_raw=2.4800
+[train] epoch=0 step=1300 loss=0.1950 a2t_avg=0.1457 i2t_avg=0.1553 emb_norm_mean=1.4375 emb_norm_std=0.9102 head_norm_mean=0.3809 head_norm_std=0.0171 loss_raw=3.1200 a2t_raw=2.3312 i2t_raw=2.4848
+[train] epoch=0 step=1350 loss=0.1374 a2t_avg=0.1457 i2t_avg=0.1555 emb_norm_mean=1.4375 emb_norm_std=0.9102 head_norm_mean=0.3809 head_norm_std=0.0171 loss_raw=2.1984 a2t_raw=2.3312 i2t_raw=2.4880
+[train] epoch=0 step=1400 loss=0.1368 a2t_avg=0.1459 i2t_avg=0.1562 emb_norm_mean=1.4375 emb_norm_std=0.9141 head_norm_mean=0.3809 head_norm_std=0.0171 loss_raw=2.1888 a2t_raw=2.3344 i2t_raw=2.4992
+[train] epoch=0 step=1450 loss=0.2258 a2t_avg=0.1462 i2t_avg=0.1571 emb_norm_mean=1.4375 emb_norm_std=0.9141 head_norm_mean=0.3809 head_norm_std=0.0172 loss_raw=3.6128 a2t_raw=2.3392 i2t_raw=2.5136
+[train] epoch=0 step=1500 loss=0.2396 a2t_avg=0.1460 i2t_avg=0.1570 emb_norm_mean=1.4453 emb_norm_std=0.9141 head_norm_mean=0.3809 head_norm_std=0.0171 loss_raw=3.8336 a2t_raw=2.3360 i2t_raw=2.5120
+[train] epoch=0 step=1550 loss=0.1912 a2t_avg=0.1460 i2t_avg=0.1571 emb_norm_mean=1.4453 emb_norm_std=0.9141 head_norm_mean=0.3809 head_norm_std=0.0172 loss_raw=3.0592 a2t_raw=2.3360 i2t_raw=2.5136
+[train] epoch=0 step=1600 loss=0.1557 a2t_avg=0.1455 i2t_avg=0.1583 emb_norm_mean=1.4453 emb_norm_std=0.9180 head_norm_mean=0.3809 head_norm_std=0.0172 loss_raw=2.4912 a2t_raw=2.3280 i2t_raw=2.5328
+[train] epoch=0 step=1650 loss=0.1721 a2t_avg=0.1464 i2t_avg=0.1582 emb_norm_mean=1.4453 emb_norm_std=0.9180 head_norm_mean=0.3809 head_norm_std=0.0172 loss_raw=2.7536 a2t_raw=2.3424 i2t_raw=2.5312
+[train] epoch=0 step=1700 loss=0.1297 a2t_avg=0.1466 i2t_avg=0.1580 emb_norm_mean=1.4453 emb_norm_std=0.9180 head_norm_mean=0.3809 head_norm_std=0.0172 loss_raw=2.0752 a2t_raw=2.3456 i2t_raw=2.5280
+[train] epoch=0 step=1750 loss=0.1290 a2t_avg=0.1466 i2t_avg=0.1585 emb_norm_mean=1.4531 emb_norm_std=0.9180 head_norm_mean=0.3809 head_norm_std=0.0172 loss_raw=2.0640 a2t_raw=2.3456 i2t_raw=2.5360
+[train] epoch=0 step=1800 loss=0.2076 a2t_avg=0.1463 i2t_avg=0.1580 emb_norm_mean=1.4531 emb_norm_std=0.9219 head_norm_mean=0.3809 head_norm_std=0.0172 loss_raw=3.3216 a2t_raw=2.3408 i2t_raw=2.5280
+[train] epoch=0 step=1850 loss=0.0739 a2t_avg=0.1462 i2t_avg=0.1580 emb_norm_mean=1.4531 emb_norm_std=0.9219 head_norm_mean=0.3809 head_norm_std=0.0173 loss_raw=1.1824 a2t_raw=2.3392 i2t_raw=2.5280
+[train] epoch=0 step=1900 loss=0.0992 a2t_avg=0.1465 i2t_avg=0.1584 emb_norm_mean=1.4531 emb_norm_std=0.9219 head_norm_mean=0.3809 head_norm_std=0.0173 loss_raw=1.5872 a2t_raw=2.3440 i2t_raw=2.5344
+[train] epoch=0 step=1950 loss=0.1464 a2t_avg=0.1463 i2t_avg=0.1581 emb_norm_mean=1.4609 emb_norm_std=0.9258 head_norm_mean=0.3809 head_norm_std=0.0173 loss_raw=2.3424 a2t_raw=2.3408 i2t_raw=2.5296
+[train] epoch=0 step=2000 loss=0.1053 a2t_avg=0.1462 i2t_avg=0.1580 emb_norm_mean=1.4609 emb_norm_std=0.9258 head_norm_mean=0.3809 head_norm_std=0.0173 loss_raw=1.6848 a2t_raw=2.3392 i2t_raw=2.5280
+[ablation] step=2000 audio={'loss_correct_mean': 2.397508565336466, 'loss_shuffle_mean': 2.375033598393202, 'loss_noise_mean': 2.5305909225717187, 'win_rate_shuffle': 0.578125, 'win_rate_noise': 0.765625, 'n_examples': 64.0} image={'loss_correct_mean': 3.4821205511689186, 'loss_shuffle_mean': 3.4600474759936333, 'loss_noise_mean': 4.075624443590641, 'win_rate_shuffle': 0.421875, 'win_rate_noise': 0.9375, 'n_examples': 64.0}
+[train] epoch=0 step=2050 loss=0.1423 a2t_avg=0.1463 i2t_avg=0.1578 emb_norm_mean=1.4609 emb_norm_std=0.9258 head_norm_mean=0.3809 head_norm_std=0.0173 loss_raw=2.2768 a2t_raw=2.3408 i2t_raw=2.5248
+[train] epoch=0 step=2100 loss=0.1785 a2t_avg=0.1466 i2t_avg=0.1574 emb_norm_mean=1.4609 emb_norm_std=0.9297 head_norm_mean=0.3809 head_norm_std=0.0173 loss_raw=2.8560 a2t_raw=2.3456 i2t_raw=2.5184
+[train] epoch=0 step=2150 loss=0.1776 a2t_avg=0.1466 i2t_avg=0.1568 emb_norm_mean=1.4609 emb_norm_std=0.9297 head_norm_mean=0.3809 head_norm_std=0.0173 loss_raw=2.8416 a2t_raw=2.3456 i2t_raw=2.5088
+[train] epoch=0 step=2200 loss=0.2493 a2t_avg=0.1465 i2t_avg=0.1572 emb_norm_mean=1.4688 emb_norm_std=0.9297 head_norm_mean=0.3809 head_norm_std=0.0173 loss_raw=3.9888 a2t_raw=2.3440 i2t_raw=2.5152
+[train] epoch=0 step=2250 loss=0.1420 a2t_avg=0.1463 i2t_avg=0.1570 emb_norm_mean=1.4688 emb_norm_std=0.9297 head_norm_mean=0.3809 head_norm_std=0.0173 loss_raw=2.2720 a2t_raw=2.3408 i2t_raw=2.5120
+[train] epoch=0 step=2300 loss=0.3638 a2t_avg=0.1462 i2t_avg=0.1569 emb_norm_mean=1.4688 emb_norm_std=0.9297 head_norm_mean=0.3809 head_norm_std=0.0173 loss_raw=5.8208 a2t_raw=2.3392 i2t_raw=2.5104
+[train] epoch=0 step=2350 loss=0.1803 a2t_avg=0.1461 i2t_avg=0.1569 emb_norm_mean=1.4688 emb_norm_std=0.9336 head_norm_mean=0.3809 head_norm_std=0.0175 loss_raw=2.8848 a2t_raw=2.3376 i2t_raw=2.5104
+[train] epoch=0 step=2400 loss=0.1760 a2t_avg=0.1459 i2t_avg=0.1568 emb_norm_mean=1.4688 emb_norm_std=0.9336 head_norm_mean=0.3809 head_norm_std=0.0177 loss_raw=2.8160 a2t_raw=2.3344 i2t_raw=2.5088
+[train] epoch=0 step=2450 loss=0.2063 a2t_avg=0.1459 i2t_avg=0.1568 emb_norm_mean=1.4766 emb_norm_std=0.9336 head_norm_mean=0.3809 head_norm_std=0.0178 loss_raw=3.3008 a2t_raw=2.3344 i2t_raw=2.5088
+[train] epoch=0 step=2500 loss=0.0783 a2t_avg=0.1455 i2t_avg=0.1570 emb_norm_mean=1.4766 emb_norm_std=0.9375 head_norm_mean=0.3809 head_norm_std=0.0179 loss_raw=1.2528 a2t_raw=2.3280 i2t_raw=2.5120
+[train] epoch=0 step=2550 loss=0.1579 a2t_avg=0.1458 i2t_avg=0.1569 emb_norm_mean=1.4766 emb_norm_std=0.9375 head_norm_mean=0.3809 head_norm_std=0.0179 loss_raw=2.5264 a2t_raw=2.3328 i2t_raw=2.5104
+[train] epoch=0 step=2600 loss=0.1212 a2t_avg=0.1457 i2t_avg=0.1570 emb_norm_mean=1.4766 emb_norm_std=0.9375 head_norm_mean=0.3809 head_norm_std=0.0181 loss_raw=1.9392 a2t_raw=2.3312 i2t_raw=2.5120
+[train] epoch=0 step=2650 loss=0.0929 a2t_avg=0.1457 i2t_avg=0.1570 emb_norm_mean=1.4766 emb_norm_std=0.9375 head_norm_mean=0.3809 head_norm_std=0.0181 loss_raw=1.4864 a2t_raw=2.3312 i2t_raw=2.5120
+[train] epoch=0 step=2700 loss=0.0756 a2t_avg=0.1455 i2t_avg=0.1570 emb_norm_mean=1.4844 emb_norm_std=0.9414 head_norm_mean=0.3809 head_norm_std=0.0181 loss_raw=1.2096 a2t_raw=2.3280 i2t_raw=2.5120
+[train] epoch=0 step=2750 loss=0.1212 a2t_avg=0.1453 i2t_avg=0.1571 emb_norm_mean=1.4844 emb_norm_std=0.9414 head_norm_mean=0.3809 head_norm_std=0.0181 loss_raw=1.9392 a2t_raw=2.3248 i2t_raw=2.5136
+[train] epoch=0 step=2800 loss=0.1904 a2t_avg=0.1452 i2t_avg=0.1573 emb_norm_mean=1.4844 emb_norm_std=0.9414 head_norm_mean=0.3809 head_norm_std=0.0182 loss_raw=3.0464 a2t_raw=2.3232 i2t_raw=2.5168
+[train] epoch=0 step=2850 loss=0.1939 a2t_avg=0.1452 i2t_avg=0.1575 emb_norm_mean=1.4844 emb_norm_std=0.9414 head_norm_mean=0.3809 head_norm_std=0.0182 loss_raw=3.1024 a2t_raw=2.3232 i2t_raw=2.5200
+[train] epoch=0 step=2900 loss=0.2003 a2t_avg=0.1453 i2t_avg=0.1582 emb_norm_mean=1.4922 emb_norm_std=0.9453 head_norm_mean=0.3809 head_norm_std=0.0182 loss_raw=3.2048 a2t_raw=2.3248 i2t_raw=2.5312
+[train] epoch=0 step=2950 loss=0.1060 a2t_avg=0.1452 i2t_avg=0.1583 emb_norm_mean=1.4922 emb_norm_std=0.9453 head_norm_mean=0.3809 head_norm_std=0.0183 loss_raw=1.6960 a2t_raw=2.3232 i2t_raw=2.5328
+[train] epoch=0 step=3000 loss=0.2255 a2t_avg=0.1450 i2t_avg=0.1586 emb_norm_mean=1.4922 emb_norm_std=0.9453 head_norm_mean=0.3809 head_norm_std=0.0183 loss_raw=3.6080 a2t_raw=2.3200 i2t_raw=2.5376
+[ablation] step=3000 audio={'loss_correct_mean': 2.3900670977309346, 'loss_shuffle_mean': 2.344077678397298, 'loss_noise_mean': 2.5212726444005966, 'win_rate_shuffle': 0.546875, 'win_rate_noise': 0.703125, 'n_examples': 64.0} image={'loss_correct_mean': 3.481202643364668, 'loss_shuffle_mean': 3.4513169322162867, 'loss_noise_mean': 3.9445714950561523, 'win_rate_shuffle': 0.453125, 'win_rate_noise': 0.921875, 'n_examples': 64.0}
+[train] epoch=0 step=3050 loss=0.1214 a2t_avg=0.1449 i2t_avg=0.1583 emb_norm_mean=1.4922 emb_norm_std=0.9492 head_norm_mean=0.3809 head_norm_std=0.0183 loss_raw=1.9424 a2t_raw=2.3184 i2t_raw=2.5328
+[train] epoch=0 step=3100 loss=0.1102 a2t_avg=0.1451 i2t_avg=0.1585 emb_norm_mean=1.4922 emb_norm_std=0.9492 head_norm_mean=0.3809 head_norm_std=0.0184 loss_raw=1.7632 a2t_raw=2.3216 i2t_raw=2.5360
+[train] epoch=0 step=3150 loss=0.1935 a2t_avg=0.1449 i2t_avg=0.1586 emb_norm_mean=1.5000 emb_norm_std=0.9492 head_norm_mean=0.3809 head_norm_std=0.0186 loss_raw=3.0960 a2t_raw=2.3184 i2t_raw=2.5376
+[train] epoch=0 step=3200 loss=0.1294 a2t_avg=0.1449 i2t_avg=0.1585 emb_norm_mean=1.5000 emb_norm_std=0.9492 head_norm_mean=0.3809 head_norm_std=0.0186 loss_raw=2.0704 a2t_raw=2.3184 i2t_raw=2.5360
+[train] epoch=0 step=3250 loss=0.1188 a2t_avg=0.1450 i2t_avg=0.1583 emb_norm_mean=1.5000 emb_norm_std=0.9531 head_norm_mean=0.3809 head_norm_std=0.0186 loss_raw=1.9008 a2t_raw=2.3200 i2t_raw=2.5328
+[train] epoch=0 step=3300 loss=0.1673 a2t_avg=0.1450 i2t_avg=0.1584 emb_norm_mean=1.5000 emb_norm_std=0.9531 head_norm_mean=0.3809 head_norm_std=0.0186 loss_raw=2.6768 a2t_raw=2.3200 i2t_raw=2.5344
+[train] epoch=0 step=3350 loss=0.0839 a2t_avg=0.1449 i2t_avg=0.1585 emb_norm_mean=1.5000 emb_norm_std=0.9531 head_norm_mean=0.3809 head_norm_std=0.0186 loss_raw=1.3424 a2t_raw=2.3184 i2t_raw=2.5360
+[train] epoch=0 step=3400 loss=0.1053 a2t_avg=0.1449 i2t_avg=0.1587 emb_norm_mean=1.5078 emb_norm_std=0.9570 head_norm_mean=0.3809 head_norm_std=0.0186 loss_raw=1.6848 a2t_raw=2.3184 i2t_raw=2.5392
+[train] epoch=0 step=3450 loss=0.1979 a2t_avg=0.1448 i2t_avg=0.1590 emb_norm_mean=1.5078 emb_norm_std=0.9570 head_norm_mean=0.3809 head_norm_std=0.0186 loss_raw=3.1664 a2t_raw=2.3168 i2t_raw=2.5440
+[train] epoch=0 step=3500 loss=0.1529 a2t_avg=0.1448 i2t_avg=0.1590 emb_norm_mean=1.5078 emb_norm_std=0.9570 head_norm_mean=0.3809 head_norm_std=0.0186 loss_raw=2.4464 a2t_raw=2.3168 i2t_raw=2.5440
+[train] epoch=0 step=3550 loss=0.1524 a2t_avg=0.1448 i2t_avg=0.1587 emb_norm_mean=1.5078 emb_norm_std=0.9570 head_norm_mean=0.3809 head_norm_std=0.0186 loss_raw=2.4384 a2t_raw=2.3168 i2t_raw=2.5392
+[train] epoch=0 step=3600 loss=0.1235 a2t_avg=0.1447 i2t_avg=0.1586 emb_norm_mean=1.5156 emb_norm_std=0.9609 head_norm_mean=0.3809 head_norm_std=0.0186 loss_raw=1.9760 a2t_raw=2.3152 i2t_raw=2.5376
+[train] epoch=0 step=3650 loss=0.1331 a2t_avg=0.1450 i2t_avg=0.1587 emb_norm_mean=1.5156 emb_norm_std=0.9609 head_norm_mean=0.3809 head_norm_std=0.0186 loss_raw=2.1296 a2t_raw=2.3200 i2t_raw=2.5392
+[train] epoch=0 step=3700 loss=0.2196 a2t_avg=0.1451 i2t_avg=0.1588 emb_norm_mean=1.5156 emb_norm_std=0.9609 head_norm_mean=0.3809 head_norm_std=0.0186 loss_raw=3.5136 a2t_raw=2.3216 i2t_raw=2.5408
+[train] epoch=0 step=3750 loss=0.1716 a2t_avg=0.1449 i2t_avg=0.1586 emb_norm_mean=1.5156 emb_norm_std=0.9609 head_norm_mean=0.3809 head_norm_std=0.0187 loss_raw=2.7456 a2t_raw=2.3184 i2t_raw=2.5376
+[train] epoch=0 step=3800 loss=0.1848 a2t_avg=0.1449 i2t_avg=0.1587 emb_norm_mean=1.5156 emb_norm_std=0.9609 head_norm_mean=0.3809 head_norm_std=0.0187 loss_raw=2.9568 a2t_raw=2.3184 i2t_raw=2.5392
+[train] epoch=0 step=3850 loss=0.1237 a2t_avg=0.1450 i2t_avg=0.1588 emb_norm_mean=1.5156 emb_norm_std=0.9648 head_norm_mean=0.3809 head_norm_std=0.0186 loss_raw=1.9792 a2t_raw=2.3200 i2t_raw=2.5408
+[train] epoch=0 step=3900 loss=0.0938 a2t_avg=0.1450 i2t_avg=0.1589 emb_norm_mean=1.5156 emb_norm_std=0.9648 head_norm_mean=0.3809 head_norm_std=0.0187 loss_raw=1.5008 a2t_raw=2.3200 i2t_raw=2.5424
+[train] epoch=0 step=3950 loss=0.2701 a2t_avg=0.1451 i2t_avg=0.1589 emb_norm_mean=1.5234 emb_norm_std=0.9648 head_norm_mean=0.3809 head_norm_std=0.0187 loss_raw=4.3216 a2t_raw=2.3216 i2t_raw=2.5424
+[train] epoch=0 step=4000 loss=0.1231 a2t_avg=0.1451 i2t_avg=0.1591 emb_norm_mean=1.5234 emb_norm_std=0.9648 head_norm_mean=0.3809 head_norm_std=0.0187 loss_raw=1.9696 a2t_raw=2.3216 i2t_raw=2.5456
+[ablation] step=4000 audio={'loss_correct_mean': 2.3967114137485623, 'loss_shuffle_mean': 2.409164821729064, 'loss_noise_mean': 2.6160077219828963, 'win_rate_shuffle': 0.4375, 'win_rate_noise': 0.625, 'n_examples': 64.0} image={'loss_correct_mean': 3.473530078306794, 'loss_shuffle_mean': 3.4451627787202597, 'loss_noise_mean': 3.9616094306111336, 'win_rate_shuffle': 0.40625, 'win_rate_noise': 0.9375, 'n_examples': 64.0}
+[train] epoch=0 step=4050 loss=0.1508 a2t_avg=0.1450 i2t_avg=0.1592 emb_norm_mean=1.5234 emb_norm_std=0.9688 head_norm_mean=0.3809 head_norm_std=0.0187 loss_raw=2.4128 a2t_raw=2.3200 i2t_raw=2.5472
+[train] epoch=0 step=4100 loss=0.1474 a2t_avg=0.1451 i2t_avg=0.1593 emb_norm_mean=1.5234 emb_norm_std=0.9688 head_norm_mean=0.3809 head_norm_std=0.0187 loss_raw=2.3584 a2t_raw=2.3216 i2t_raw=2.5488
+[train] epoch=0 step=4150 loss=0.1520 a2t_avg=0.1452 i2t_avg=0.1594 emb_norm_mean=1.5234 emb_norm_std=0.9688 head_norm_mean=0.3809 head_norm_std=0.0187 loss_raw=2.4320 a2t_raw=2.3232 i2t_raw=2.5504
+[train] epoch=0 step=4200 loss=0.1237 a2t_avg=0.1451 i2t_avg=0.1596 emb_norm_mean=1.5312 emb_norm_std=0.9688 head_norm_mean=0.3809 head_norm_std=0.0187 loss_raw=1.9792 a2t_raw=2.3216 i2t_raw=2.5536
+[train] epoch=0 step=4250 loss=0.1200 a2t_avg=0.1451 i2t_avg=0.1597 emb_norm_mean=1.5312 emb_norm_std=0.9688 head_norm_mean=0.3809 head_norm_std=0.0187 loss_raw=1.9200 a2t_raw=2.3216 i2t_raw=2.5552
+[train] epoch=0 step=4300 loss=0.1096 a2t_avg=0.1450 i2t_avg=0.1599 emb_norm_mean=1.5312 emb_norm_std=0.9727 head_norm_mean=0.3809 head_norm_std=0.0187 loss_raw=1.7536 a2t_raw=2.3200 i2t_raw=2.5584
+[train] epoch=0 step=4350 loss=0.1457 a2t_avg=0.1452 i2t_avg=0.1599 emb_norm_mean=1.5312 emb_norm_std=0.9727 head_norm_mean=0.3809 head_norm_std=0.0186 loss_raw=2.3312 a2t_raw=2.3232 i2t_raw=2.5584
+[train] epoch=0 step=4400 loss=0.1834 a2t_avg=0.1450 i2t_avg=0.1599 emb_norm_mean=1.5312 emb_norm_std=0.9727 head_norm_mean=0.3809 head_norm_std=0.0187 loss_raw=2.9344 a2t_raw=2.3200 i2t_raw=2.5584
+[train] epoch=0 step=4450 loss=0.2052 a2t_avg=0.1449 i2t_avg=0.1600 emb_norm_mean=1.5312 emb_norm_std=0.9727 head_norm_mean=0.3809 head_norm_std=0.0188 loss_raw=3.2832 a2t_raw=2.3184 i2t_raw=2.5600
+[train] epoch=0 step=4500 loss=0.1115 a2t_avg=0.1446 i2t_avg=0.1599 emb_norm_mean=1.5391 emb_norm_std=0.9766 head_norm_mean=0.3809 head_norm_std=0.0189 loss_raw=1.7840 a2t_raw=2.3136 i2t_raw=2.5584
+[train] epoch=0 step=4550 loss=0.1723 a2t_avg=0.1448 i2t_avg=0.1601 emb_norm_mean=1.5391 emb_norm_std=0.9766 head_norm_mean=0.3809 head_norm_std=0.0189 loss_raw=2.7568 a2t_raw=2.3168 i2t_raw=2.5616
+[train] epoch=0 step=4600 loss=0.0667 a2t_avg=0.1449 i2t_avg=0.1602 emb_norm_mean=1.5391 emb_norm_std=0.9766 head_norm_mean=0.3809 head_norm_std=0.0190 loss_raw=1.0672 a2t_raw=2.3184 i2t_raw=2.5632
+[train] epoch=0 step=4650 loss=0.1508 a2t_avg=0.1448 i2t_avg=0.1602 emb_norm_mean=1.5391 emb_norm_std=0.9766 head_norm_mean=0.3809 head_norm_std=0.0190 loss_raw=2.4128 a2t_raw=2.3168 i2t_raw=2.5632
+[train] epoch=0 step=4700 loss=0.1147 a2t_avg=0.1448 i2t_avg=0.1602 emb_norm_mean=1.5391 emb_norm_std=0.9805 head_norm_mean=0.3809 head_norm_std=0.0190 loss_raw=1.8352 a2t_raw=2.3168 i2t_raw=2.5632
+[train] epoch=0 step=4750 loss=0.1998 a2t_avg=0.1449 i2t_avg=0.1602 emb_norm_mean=1.5391 emb_norm_std=0.9805 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=3.1968 a2t_raw=2.3184 i2t_raw=2.5632
+[train] epoch=0 step=4800 loss=0.1026 a2t_avg=0.1448 i2t_avg=0.1605 emb_norm_mean=1.5469 emb_norm_std=0.9805 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=1.6416 a2t_raw=2.3168 i2t_raw=2.5680
+[train] epoch=0 step=4850 loss=0.1650 a2t_avg=0.1446 i2t_avg=0.1604 emb_norm_mean=1.5469 emb_norm_std=0.9805 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=2.6400 a2t_raw=2.3136 i2t_raw=2.5664
+[train] epoch=0 step=4900 loss=0.1040 a2t_avg=0.1447 i2t_avg=0.1603 emb_norm_mean=1.5469 emb_norm_std=0.9844 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=1.6640 a2t_raw=2.3152 i2t_raw=2.5648
+[train] epoch=0 step=4950 loss=0.2574 a2t_avg=0.1445 i2t_avg=0.1604 emb_norm_mean=1.5469 emb_norm_std=0.9844 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=4.1184 a2t_raw=2.3120 i2t_raw=2.5664
+[train] epoch=0 step=5000 loss=0.2108 a2t_avg=0.1446 i2t_avg=0.1605 emb_norm_mean=1.5469 emb_norm_std=0.9844 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=3.3728 a2t_raw=2.3136 i2t_raw=2.5680
+[ablation] step=5000 audio={'loss_correct_mean': 2.342845148406923, 'loss_shuffle_mean': 2.339713042601943, 'loss_noise_mean': 2.6428383700549603, 'win_rate_shuffle': 0.5625, 'win_rate_noise': 0.75, 'n_examples': 64.0} image={'loss_correct_mean': 3.463255224749446, 'loss_shuffle_mean': 3.43869193084538, 'loss_noise_mean': 3.9538964591920376, 'win_rate_shuffle': 0.421875, 'win_rate_noise': 0.875, 'n_examples': 64.0}
+[train] epoch=0 step=5050 loss=0.2143 a2t_avg=0.1445 i2t_avg=0.1606 emb_norm_mean=1.5547 emb_norm_std=0.9844 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=3.4288 a2t_raw=2.3120 i2t_raw=2.5696
+[train] epoch=0 step=5100 loss=0.0784 a2t_avg=0.1446 i2t_avg=0.1608 emb_norm_mean=1.5547 emb_norm_std=0.9883 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=1.2544 a2t_raw=2.3136 i2t_raw=2.5728
+[train] epoch=0 step=5150 loss=0.1567 a2t_avg=0.1445 i2t_avg=0.1609 emb_norm_mean=1.5547 emb_norm_std=0.9883 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=2.5072 a2t_raw=2.3120 i2t_raw=2.5744
+[train] epoch=0 step=5200 loss=0.0948 a2t_avg=0.1445 i2t_avg=0.1611 emb_norm_mean=1.5547 emb_norm_std=0.9883 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=1.5168 a2t_raw=2.3120 i2t_raw=2.5776
+[train] epoch=0 step=5250 loss=0.1433 a2t_avg=0.1446 i2t_avg=0.1610 emb_norm_mean=1.5625 emb_norm_std=0.9922 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=2.2928 a2t_raw=2.3136 i2t_raw=2.5760
+[train] epoch=0 step=5300 loss=0.1998 a2t_avg=0.1446 i2t_avg=0.1611 emb_norm_mean=1.5625 emb_norm_std=0.9922 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=3.1968 a2t_raw=2.3136 i2t_raw=2.5776
+[train] epoch=0 step=5350 loss=0.2010 a2t_avg=0.1447 i2t_avg=0.1614 emb_norm_mean=1.5625 emb_norm_std=0.9922 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=3.2160 a2t_raw=2.3152 i2t_raw=2.5824
+[train] epoch=0 step=5400 loss=0.1936 a2t_avg=0.1447 i2t_avg=0.1612 emb_norm_mean=1.5625 emb_norm_std=0.9922 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=3.0976 a2t_raw=2.3152 i2t_raw=2.5792
+[train] epoch=0 step=5450 loss=0.1333 a2t_avg=0.1448 i2t_avg=0.1613 emb_norm_mean=1.5625 emb_norm_std=0.9961 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=2.1328 a2t_raw=2.3168 i2t_raw=2.5808
+[train] epoch=0 step=5500 loss=0.1930 a2t_avg=0.1447 i2t_avg=0.1615 emb_norm_mean=1.5703 emb_norm_std=0.9961 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=3.0880 a2t_raw=2.3152 i2t_raw=2.5840
+[train] epoch=0 step=5550 loss=0.1598 a2t_avg=0.1447 i2t_avg=0.1616 emb_norm_mean=1.5703 emb_norm_std=0.9961 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=2.5568 a2t_raw=2.3152 i2t_raw=2.5856
+[train] epoch=0 step=5600 loss=0.1377 a2t_avg=0.1447 i2t_avg=0.1618 emb_norm_mean=1.5703 emb_norm_std=1.0000 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=2.2032 a2t_raw=2.3152 i2t_raw=2.5888
+[train] epoch=0 step=5650 loss=0.1477 a2t_avg=0.1449 i2t_avg=0.1619 emb_norm_mean=1.5703 emb_norm_std=1.0000 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=2.3632 a2t_raw=2.3184 i2t_raw=2.5904
+[train] epoch=0 step=5700 loss=0.1475 a2t_avg=0.1449 i2t_avg=0.1617 emb_norm_mean=1.5703 emb_norm_std=1.0000 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=2.3600 a2t_raw=2.3184 i2t_raw=2.5872
+[train] epoch=0 step=5750 loss=0.0801 a2t_avg=0.1449 i2t_avg=0.1617 emb_norm_mean=1.5781 emb_norm_std=1.0000 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=1.2816 a2t_raw=2.3184 i2t_raw=2.5872
+[train] epoch=0 step=5800 loss=0.1591 a2t_avg=0.1450 i2t_avg=0.1618 emb_norm_mean=1.5781 emb_norm_std=1.0000 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=2.5456 a2t_raw=2.3200 i2t_raw=2.5888
+[train] epoch=0 step=5850 loss=0.1340 a2t_avg=0.1449 i2t_avg=0.1621 emb_norm_mean=1.5781 emb_norm_std=1.0000 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=2.1440 a2t_raw=2.3184 i2t_raw=2.5936
+[train] epoch=0 step=5900 loss=0.1845 a2t_avg=0.1449 i2t_avg=0.1622 emb_norm_mean=1.5781 emb_norm_std=1.0000 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=2.9520 a2t_raw=2.3184 i2t_raw=2.5952
+[train] epoch=0 step=5950 loss=0.1523 a2t_avg=0.1449 i2t_avg=0.1622 emb_norm_mean=1.5781 emb_norm_std=1.0000 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=2.4368 a2t_raw=2.3184 i2t_raw=2.5952
+[train] epoch=0 step=6000 loss=0.1178 a2t_avg=0.1449 i2t_avg=0.1623 emb_norm_mean=1.5781 emb_norm_std=1.0078 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=1.8848 a2t_raw=2.3184 i2t_raw=2.5968
+[ablation] step=6000 audio={'loss_correct_mean': 2.3872246658429503, 'loss_shuffle_mean': 2.354699100367725, 'loss_noise_mean': 2.540816622786224, 'win_rate_shuffle': 0.515625, 'win_rate_noise': 0.6875, 'n_examples': 64.0} image={'loss_correct_mean': 3.4735584016889334, 'loss_shuffle_mean': 3.4445278737694025, 'loss_noise_mean': 3.982082035392523, 'win_rate_shuffle': 0.421875, 'win_rate_noise': 0.828125, 'n_examples': 64.0}
+[train] epoch=0 step=6050 loss=0.1091 a2t_avg=0.1449 i2t_avg=0.1622 emb_norm_mean=1.5781 emb_norm_std=1.0078 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=1.7456 a2t_raw=2.3184 i2t_raw=2.5952
+[train] epoch=0 step=6100 loss=0.1377 a2t_avg=0.1449 i2t_avg=0.1622 emb_norm_mean=1.5859 emb_norm_std=1.0078 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=2.2032 a2t_raw=2.3184 i2t_raw=2.5952
+[train] epoch=0 step=6150 loss=0.1078 a2t_avg=0.1449 i2t_avg=0.1622 emb_norm_mean=1.5859 emb_norm_std=1.0078 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=1.7248 a2t_raw=2.3184 i2t_raw=2.5952
+[train] epoch=0 step=6200 loss=0.0831 a2t_avg=0.1447 i2t_avg=0.1623 emb_norm_mean=1.5859 emb_norm_std=1.0078 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=1.3296 a2t_raw=2.3152 i2t_raw=2.5968
+[train] epoch=0 step=6250 loss=0.1949 a2t_avg=0.1447 i2t_avg=0.1623 emb_norm_mean=1.5859 emb_norm_std=1.0078 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=3.1184 a2t_raw=2.3152 i2t_raw=2.5968
+[train] epoch=0 step=6300 loss=0.0749 a2t_avg=0.1447 i2t_avg=0.1623 emb_norm_mean=1.5859 emb_norm_std=1.0078 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=1.1984 a2t_raw=2.3152 i2t_raw=2.5968
+[train] epoch=0 step=6350 loss=0.1182 a2t_avg=0.1447 i2t_avg=0.1624 emb_norm_mean=1.5859 emb_norm_std=1.0078 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=1.8912 a2t_raw=2.3152 i2t_raw=2.5984
+[train] epoch=0 step=6400 loss=0.1635 a2t_avg=0.1448 i2t_avg=0.1624 emb_norm_mean=1.5938 emb_norm_std=1.0078 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=2.6160 a2t_raw=2.3168 i2t_raw=2.5984
+[train] epoch=0 step=6450 loss=0.1404 a2t_avg=0.1447 i2t_avg=0.1625 emb_norm_mean=1.5938 emb_norm_std=1.0156 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=2.2464 a2t_raw=2.3152 i2t_raw=2.6000
+[train] epoch=0 step=6500 loss=0.1541 a2t_avg=0.1447 i2t_avg=0.1627 emb_norm_mean=1.5938 emb_norm_std=1.0156 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=2.4656 a2t_raw=2.3152 i2t_raw=2.6032
+[train] epoch=0 step=6550 loss=0.1647 a2t_avg=0.1447 i2t_avg=0.1628 emb_norm_mean=1.5938 emb_norm_std=1.0156 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=2.6352 a2t_raw=2.3152 i2t_raw=2.6048
+[train] epoch=0 step=6600 loss=0.1124 a2t_avg=0.1447 i2t_avg=0.1628 emb_norm_mean=1.5938 emb_norm_std=1.0156 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=1.7984 a2t_raw=2.3152 i2t_raw=2.6048
+[train] epoch=0 step=6650 loss=0.1334 a2t_avg=0.1446 i2t_avg=0.1630 emb_norm_mean=1.6016 emb_norm_std=1.0156 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=2.1344 a2t_raw=2.3136 i2t_raw=2.6080
+[train] epoch=0 step=6700 loss=0.0912 a2t_avg=0.1446 i2t_avg=0.1630 emb_norm_mean=1.6016 emb_norm_std=1.0156 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=1.4592 a2t_raw=2.3136 i2t_raw=2.6080
+[train] epoch=0 step=6750 loss=0.2466 a2t_avg=0.1445 i2t_avg=0.1630 emb_norm_mean=1.6016 emb_norm_std=1.0156 head_norm_mean=0.3809 head_norm_std=0.0193 loss_raw=3.9456 a2t_raw=2.3120 i2t_raw=2.6080
+[train] epoch=0 step=6800 loss=0.2156 a2t_avg=0.1446 i2t_avg=0.1631 emb_norm_mean=1.6016 emb_norm_std=1.0234 head_norm_mean=0.3809 head_norm_std=0.0192 loss_raw=3.4496 a2t_raw=2.3136 i2t_raw=2.6096
+[train] epoch=0 step=6850 loss=0.1306 a2t_avg=0.1446 i2t_avg=0.1632 emb_norm_mean=1.6016 emb_norm_std=1.0234 head_norm_mean=0.3809 head_norm_std=0.0194 loss_raw=2.0896 a2t_raw=2.3136 i2t_raw=2.6112
+[train] epoch=0 step=6900 loss=0.1019 a2t_avg=0.1445 i2t_avg=0.1633 emb_norm_mean=1.6094 emb_norm_std=1.0234 head_norm_mean=0.3809 head_norm_std=0.0194 loss_raw=1.6304 a2t_raw=2.3120 i2t_raw=2.6128
+[train] epoch=0 step=6950 loss=0.1017 a2t_avg=0.1444 i2t_avg=0.1634 emb_norm_mean=1.6094 emb_norm_std=1.0234 head_norm_mean=0.3809 head_norm_std=0.0194 loss_raw=1.6272 a2t_raw=2.3104 i2t_raw=2.6144
+[train] epoch=0 step=7000 loss=0.1091 a2t_avg=0.1443 i2t_avg=0.1634 emb_norm_mean=1.6094 emb_norm_std=1.0234 head_norm_mean=0.3809 head_norm_std=0.0194 loss_raw=1.7456 a2t_raw=2.3088 i2t_raw=2.6144

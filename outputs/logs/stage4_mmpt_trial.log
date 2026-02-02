@@ -1,0 +1,46 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:20<01:20, 20.03s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:35<00:52, 17.49s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:51<00:33, 16.87s/it]Loading checkpoint shards:  80%|████████  | 4/5 [01:05<00:15, 15.75s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:12<00:00, 12.38s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:12<00:00, 14.46s/it]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+[train] step=50 loss_mean=9.6916 a2t_avg=2.0987 i2t_avg=1.5007 t2a_avg=9.8105 t2i_avg=12.8174 emb_norm_mean=2.0938 emb_norm_std=1.3516 head_norm_mean=0.4570 head_norm_std=0.0327
+[train] step=100 loss_mean=8.3483 a2t_avg=2.0890 i2t_avg=1.5136 t2a_avg=8.4227 t2i_avg=11.4346 emb_norm_mean=2.0938 emb_norm_std=1.3516 head_norm_mean=0.5312 head_norm_std=0.0547
+[train] step=150 loss_mean=7.9016 a2t_avg=2.1117 i2t_avg=1.4779 t2a_avg=7.9821 t2i_avg=10.6699 emb_norm_mean=2.0938 emb_norm_std=1.3516 head_norm_mean=0.5820 head_norm_std=0.0679
+[train] step=200 loss_mean=7.6536 a2t_avg=2.1071 i2t_avg=1.5029 t2a_avg=7.7365 t2i_avg=10.1153 emb_norm_mean=2.0938 emb_norm_std=1.3594 head_norm_mean=0.6211 head_norm_std=0.0757
+[train] step=250 loss_mean=7.4311 a2t_avg=2.1279 i2t_avg=1.5052 t2a_avg=7.5103 t2i_avg=9.6945 emb_norm_mean=2.0938 emb_norm_std=1.3594 head_norm_mean=0.6562 head_norm_std=0.0830
+[train] step=300 loss_mean=7.2862 a2t_avg=2.1107 i2t_avg=1.5210 t2a_avg=7.3670 t2i_avg=9.2890 emb_norm_mean=2.1094 emb_norm_std=1.3594 head_norm_mean=0.6875 head_norm_std=0.0859
+[train] step=350 loss_mean=7.1935 a2t_avg=2.0967 i2t_avg=1.5410 t2a_avg=7.2780 t2i_avg=9.0128 emb_norm_mean=2.1094 emb_norm_std=1.3594 head_norm_mean=0.7109 head_norm_std=0.0869
+[train] step=400 loss_mean=7.1052 a2t_avg=2.0819 i2t_avg=1.5304 t2a_avg=7.1941 t2i_avg=8.8046 emb_norm_mean=2.1094 emb_norm_std=1.3672 head_norm_mean=0.7305 head_norm_std=0.0874
+[train] step=450 loss_mean=7.0257 a2t_avg=2.0836 i2t_avg=1.5242 t2a_avg=7.1167 t2i_avg=8.6408 emb_norm_mean=2.1094 emb_norm_std=1.3672 head_norm_mean=0.7500 head_norm_std=0.0894
+[train] step=500 loss_mean=6.9545 a2t_avg=2.0776 i2t_avg=1.5313 t2a_avg=7.0472 t2i_avg=8.4753 emb_norm_mean=2.1094 emb_norm_std=1.3672 head_norm_mean=0.7656 head_norm_std=0.0918
+/opt/lumo/venv/lib/python3.12/site-packages/peft/utils/save_and_load.py:309: UserWarning: Setting `save_embedding_layers` to `True` as the embedding layer has been resized during finetuning.
+  warnings.warn(
+[train] step=550 loss_mean=6.8657 a2t_avg=2.0613 i2t_avg=1.4973 t2a_avg=6.9595 t2i_avg=8.2824 emb_norm_mean=2.1250 emb_norm_std=1.3672 head_norm_mean=0.7891 head_norm_std=0.0952
+[train] step=600 loss_mean=6.7865 a2t_avg=2.0349 i2t_avg=1.4523 t2a_avg=6.8833 t2i_avg=8.0830 emb_norm_mean=2.1250 emb_norm_std=1.3750 head_norm_mean=0.8125 head_norm_std=0.1016
+[train] step=650 loss_mean=6.7058 a2t_avg=2.0063 i2t_avg=1.4215 t2a_avg=6.8043 t2i_avg=7.9114 emb_norm_mean=2.1250 emb_norm_std=1.3750 head_norm_mean=0.8359 head_norm_std=0.1108
+[train] step=700 loss_mean=6.6493 a2t_avg=1.9910 i2t_avg=1.3955 t2a_avg=6.7503 t2i_avg=7.7359 emb_norm_mean=2.1250 emb_norm_std=1.3750 head_norm_mean=0.8633 head_norm_std=0.1187
+[train] step=750 loss_mean=6.5818 a2t_avg=1.9780 i2t_avg=1.3752 t2a_avg=6.6835 t2i_avg=7.5821 emb_norm_mean=2.1250 emb_norm_std=1.3750 head_norm_mean=0.8828 head_norm_std=0.1270
+[train] step=800 loss_mean=6.5276 a2t_avg=1.9638 i2t_avg=1.3503 t2a_avg=6.6321 t2i_avg=7.4508 emb_norm_mean=2.1250 emb_norm_std=1.3750 head_norm_mean=0.9023 head_norm_std=0.1357
+[train] step=850 loss_mean=6.4843 a2t_avg=1.9544 i2t_avg=1.3354 t2a_avg=6.5908 t2i_avg=7.3267 emb_norm_mean=2.1250 emb_norm_std=1.3828 head_norm_mean=0.9219 head_norm_std=0.1445
+[train] step=900 loss_mean=6.4348 a2t_avg=1.9479 i2t_avg=1.3196 t2a_avg=6.5429 t2i_avg=7.2107 emb_norm_mean=2.1406 emb_norm_std=1.3828 head_norm_mean=0.9414 head_norm_std=0.1543
+[train] step=950 loss_mean=6.3829 a2t_avg=1.9379 i2t_avg=1.3030 t2a_avg=6.4916 t2i_avg=7.1071 emb_norm_mean=2.1406 emb_norm_std=1.3828 head_norm_mean=0.9609 head_norm_std=0.1641
+[train] step=1000 loss_mean=6.3272 a2t_avg=1.9291 i2t_avg=1.2893 t2a_avg=6.4357 t2i_avg=7.0106 emb_norm_mean=2.1406 emb_norm_std=1.3828 head_norm_mean=0.9766 head_norm_std=0.1748
+[train] step=1050 loss_mean=6.2609 a2t_avg=1.9149 i2t_avg=1.2724 t2a_avg=6.3705 t2i_avg=6.8599 emb_norm_mean=2.1406 emb_norm_std=1.3828 head_norm_mean=0.9922 head_norm_std=0.1855
+[train] step=1100 loss_mean=6.1877 a2t_avg=1.8992 i2t_avg=1.2467 t2a_avg=6.3008 t2i_avg=6.6175 emb_norm_mean=2.1406 emb_norm_std=1.3828 head_norm_mean=1.0078 head_norm_std=0.1943
+[train] step=1150 loss_mean=6.1314 a2t_avg=1.8793 i2t_avg=1.2225 t2a_avg=6.2490 t2i_avg=6.4208 emb_norm_mean=2.1406 emb_norm_std=1.3906 head_norm_mean=1.0234 head_norm_std=0.2031
+[train] step=1200 loss_mean=6.0754 a2t_avg=1.8580 i2t_avg=1.2024 t2a_avg=6.1962 t2i_avg=6.2579 emb_norm_mean=2.1406 emb_norm_std=1.3906 head_norm_mean=1.0312 head_norm_std=0.2100
+[train] step=1250 loss_mean=6.0186 a2t_avg=1.8435 i2t_avg=1.1845 t2a_avg=6.1413 t2i_avg=6.0906 emb_norm_mean=2.1406 emb_norm_std=1.3906 head_norm_mean=1.0469 head_norm_std=0.2178
+[train] step=1300 loss_mean=5.9665 a2t_avg=1.8299 i2t_avg=1.1694 t2a_avg=6.0912 t2i_avg=5.9273 emb_norm_mean=2.1562 emb_norm_std=1.3906 head_norm_mean=1.0547 head_norm_std=0.2246
+[train] step=1350 loss_mean=5.9187 a2t_avg=1.8146 i2t_avg=1.1531 t2a_avg=6.0462 t2i_avg=5.7897 emb_norm_mean=2.1562 emb_norm_std=1.3906 head_norm_mean=1.0703 head_norm_std=0.2314
+[train] step=1400 loss_mean=5.8801 a2t_avg=1.8007 i2t_avg=1.1396 t2a_avg=6.0096 t2i_avg=5.6662 emb_norm_mean=2.1562 emb_norm_std=1.3906 head_norm_mean=1.0781 head_norm_std=0.2373
+[train] step=1450 loss_mean=5.8366 a2t_avg=1.7900 i2t_avg=1.1252 t2a_avg=5.9680 t2i_avg=5.5420 emb_norm_mean=2.1562 emb_norm_std=1.3984 head_norm_mean=1.0859 head_norm_std=0.2432
+[train] step=1500 loss_mean=5.7987 a2t_avg=1.7792 i2t_avg=1.1115 t2a_avg=5.9325 t2i_avg=5.4181 emb_norm_mean=2.1562 emb_norm_std=1.3984 head_norm_mean=1.0938 head_norm_std=0.2500
+[train] step=1550 loss_mean=5.7553 a2t_avg=1.7662 i2t_avg=1.0978 t2a_avg=5.8901 t2i_avg=5.3132 emb_norm_mean=2.1562 emb_norm_std=1.3984 head_norm_mean=1.1016 head_norm_std=0.2559
+[train] step=1600 loss_mean=5.7018 a2t_avg=1.7423 i2t_avg=1.0808 t2a_avg=5.8374 t2i_avg=5.1835 emb_norm_mean=2.1562 emb_norm_std=1.3984 head_norm_mean=1.1094 head_norm_std=0.2617
+[train] step=1650 loss_mean=5.6536 a2t_avg=1.7205 i2t_avg=1.0631 t2a_avg=5.7899 t2i_avg=5.0786 emb_norm_mean=2.1562 emb_norm_std=1.3984 head_norm_mean=1.1172 head_norm_std=0.2676
+[train] step=1700 loss_mean=5.6147 a2t_avg=1.7049 i2t_avg=1.0456 t2a_avg=5.7534 t2i_avg=4.9576 emb_norm_mean=2.1562 emb_norm_std=1.3984 head_norm_mean=1.1250 head_norm_std=0.2734
+[train] step=1750 loss_mean=5.5785 a2t_avg=1.6903 i2t_avg=1.0292 t2a_avg=5.7193 t2i_avg=4.8493 emb_norm_mean=2.1562 emb_norm_std=1.3984 head_norm_mean=1.1328 head_norm_std=0.2773
+[train] step=1800 loss_mean=5.5446 a2t_avg=1.6739 i2t_avg=1.0140 t2a_avg=5.6874 t2i_avg=4.7542 emb_norm_mean=2.1719 emb_norm_std=1.3984 head_norm_mean=1.1406 head_norm_std=0.2812
+[train] step=1850 loss_mean=5.5136 a2t_avg=1.6576 i2t_avg=1.0006 t2a_avg=5.6575 t2i_avg=4.6691 emb_norm_mean=2.1719 emb_norm_std=1.3984 head_norm_mean=1.1484 head_norm_std=0.2852
+[train] step=1900 loss_mean=5.4849 a2t_avg=1.6445 i2t_avg=0.9865 t2a_avg=5.6310 t2i_avg=4.5799 emb_norm_mean=2.1719 emb_norm_std=1.4062 head_norm_mean=1.1562 head_norm_std=0.2910
+[train] step=1950 loss_mean=5.4591 a2t_avg=1.6319 i2t_avg=0.9731 t2a_avg=5.6067 t2i_avg=4.4983 emb_norm_mean=2.1719 emb_norm_std=1.4062 head_norm_mean=1.1562 head_norm_std=0.2949
+[train] step=2000 loss_mean=5.4324 a2t_avg=1.6209 i2t_avg=0.9615 t2a_avg=5.5810 t2i_avg=4.4173 emb_norm_mean=2.1719 emb_norm_std=1.4062 head_norm_mean=1.1641 head_norm_std=0.2988

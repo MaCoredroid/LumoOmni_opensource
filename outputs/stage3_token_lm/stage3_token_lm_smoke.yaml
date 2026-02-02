@@ -1,0 +1,31 @@
+run_name: stage3_token_lm_smoke
+seed: 42
+output_dir: outputs/stage3_token_lm_smoke
+
+uti:
+  config_path: configs/uti.yaml
+  token_space_json: outputs/stage3_token_lm/token_space.json
+
+model:
+  base_llm: Qwen/Qwen3-8B-Base
+  vocab_size_override: null
+
+train:
+  output_dir: outputs/stage3_token_lm_smoke
+  max_seq_len: 256
+  truncation_side: left
+  batch_size: 1
+  gradient_accum: 1
+  lr: 1.0e-4
+  weight_decay: 0.0
+  num_epochs: 1
+  save_every: 2
+  log_every: 1
+  precision: bf16
+  attn_implementation: null
+  freeze_base: false
+  resume_from: null
+
+data:
+  jsonl_path: outputs/stage3_token_lm/tokenized.jsonl
+  num_workers: 0
