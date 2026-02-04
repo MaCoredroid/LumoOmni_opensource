@@ -1,0 +1,30 @@
+site_name: LumoOmni Research Docs
+site_url: ""
+repo_url: ""
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - content.code.copy
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+nav:
+  - Home: index.md
+  - Mini paper: mini_paper.md
+  - Datasets: datasets.md
+  - Model architecture: model_architecture.md
+  - Training: training.md
+  - Evaluation: evaluation.md
+  - Checkpoints & weights: checkpoints.md
+  - Roadmap & future work: roadmap.md
+  - Reproducibility: reproducibility.md
+  - FAQ: faq.md
+  - Citation: citation.md
